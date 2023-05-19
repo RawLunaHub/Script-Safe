@@ -15,6 +15,8 @@ local RunService = game:GetService("RunService")
 RunService.Stepped:Connect(webimport)
 ]]
 webimport("lua")
+task.wait()
+webimport("loadtable")
 ```
 ## Hydroxide Copyright
 ```
