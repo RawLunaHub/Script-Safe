@@ -1,6 +1,5 @@
-For my self [Open Source]
-It using Hydroxide library
-```
+## Script
+```lua
 if script.Name == "Electron" then
     script.Name = nil;
 end
