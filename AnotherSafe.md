@@ -1,5 +1,5 @@
-
-Using Hydroxide Library to use it
+For my self [Open Source]
+It using Hydroxide library
 ```
 if script.Name == "Electron" then
     script.Name = nil;
