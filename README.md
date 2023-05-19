@@ -1,6 +1,7 @@
 ## Script
 PS: Im create that for my self
 ```lua
+local library = "Ur Loadstring url here"
 if script.Name == "Electron" then
     script.Name = nil;
 end
