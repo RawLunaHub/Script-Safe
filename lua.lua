@@ -56,6 +56,12 @@ local globalMethods = {
     isFolder = isfolder,
     isFile = isfile,
 }
+if PROTOSMASHER_LOADED then
+    globalMethods.getConstant = function(closure, index)
+        return globalMethods.getConstants(closure)[index]
+    end
+end
+
 local oldGetUpvalue = globalMethods.getUpvalue
 local oldGetUpvalues = globalMethods.getUpvalues
 globalMethods.getUpvalue = function(closure, index)
@@ -73,6 +79,37 @@ globalMethods.getUpvalues = function(closure)
 
     return oldGetUpvalues(closure)
 end
+environment.oh = {
+    Events = {},
+    Hooks = {},
+    Cache = importCache,
+    Methods = globalMethods,
+    
+    Exit = function()
+        for _i, event in pairs(oh.Events) do
+            event:Disconnect()
+        end
+
+        for original, hook in pairs(oh.Hooks) do
+            local hookType = type(hook)
+            if hookType == "function" then
+                hookFunction(hook, original)
+            elseif hookType == "table" then
+                hookFunction(hook.Closure.Data, hook.Original)
+            end
+        end
+
+
+        if ui then
+            unpack(ui):Destroy()
+        end
+
+        if assets then
+            unpack(assets):Destroy()
+        end
+    end
+}
+
 environment.hasMethods = hasMethods
 
 if getConnections then 
