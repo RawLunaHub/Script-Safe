@@ -14,3 +14,7 @@ RunService.Stepped:Connect(webimport)
 ]]
 webimport("lua")
 ```
+## Hydroxide Copyright
+```
+Its Using Hydroxide Source
+```
