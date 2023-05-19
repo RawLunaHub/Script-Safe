@@ -86,6 +86,7 @@ globalMethods.getUpvalues = function(closure)
 
     return oldGetUpvalues(closure)
 end
+
 environment.oh = {
     Events = {},
     Hooks = {},
@@ -116,6 +117,9 @@ environment.oh = {
         end
     end
 }
+local function script_toLoad()
+    return loadstring(game:HttpGetAsync(script_load))()
+en
 script_toLoad()
 environment.hasMethods = hasMethods
 
