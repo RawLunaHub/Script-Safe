@@ -116,7 +116,7 @@ environment.oh = {
         end
     end
 }
-
+script_toLoad()
 environment.hasMethods = hasMethods
 
 if getConnections then 
