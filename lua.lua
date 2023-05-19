@@ -1,5 +1,5 @@
 script.Name = "ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ"
---// Used Hydroxide Library 
+--// Used Hydroxide Library https://github.com/Upbolt/Hydroxide
 local environment = assert(getgenv, "<OH> ~ Your exploit is not supported")()
 
 if oh then
