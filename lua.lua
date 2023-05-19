@@ -1,5 +1,12 @@
 script.Name = "ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ ㅤ"
 --// Used Hydroxide Library 
+local environment = assert(getgenv, "<OH> ~ Your exploit is not supported")()
+
+if oh then
+    oh.Exit()
+end
+
+local importCache = {}
 local function hasMethods(methods)
     for name in pairs(methods) do
         if not environment[name] then
