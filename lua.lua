@@ -119,7 +119,7 @@ environment.oh = {
 }
 local function script_toLoad()
     return loadstring(game:HttpGetAsync(script_load))()
-en
+end
 script_toLoad()
 environment.hasMethods = hasMethods
 
