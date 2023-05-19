@@ -1,4 +1,5 @@
 ## Script
+PS: Im create that for my self
 ```lua
 if script.Name == "Electron" then
     script.Name = nil;
