@@ -1,9 +1,7 @@
 ## Script
 PS: Im create that for my self
 ```lua
-if script.Name == "Electron" then
-    script.Name = nil;
-end
+
 local owner = "RawLunaHub"
 local branch = "main"
 local function webimport(file)
