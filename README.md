@@ -1,5 +1,4 @@
 ## Script
-PS: Im create that for my self
 ```lua
 
 local owner = "RawLunaHub"
@@ -13,12 +12,4 @@ RunService.Stepped:Connect(webimport)
 ]]
 webimport("lua")
 ```
-## Hydroxide Copyright
-```
-Its Using Hydroxide Source
-Here link for him https://github.com/Upbolt/Hydroxide
-```
-## Viewing it
-```
-Vladimir Rusakov [wervlad]
-```
+
